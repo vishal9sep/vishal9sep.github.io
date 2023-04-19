@@ -1,0 +1,154 @@
+.skills {
+  display: flex;
+  padding-top: 15vh;
+  justify-content: center;
+  height: 90vh;
+  background: linear-gradient(
+    90deg,
+    rgba(18, 19, 20, 1) 0%,
+    rgba(34, 38, 43, 1) 59%,
+    rgba(49, 54, 59, 1) 100%
+  );
+  position: relative;
+  color: white;
+}
+
+.skills__text {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid yellow; */
+}
+
+.skills__body {
+  font-family: "Fira Code", monospace;
+  max-width: 50vw;
+  padding-right: 50px;
+}
+
+.skills__headshot {
+  border-radius: 50%;
+  border: 5px solid var(--purple);
+  box-shadow: var(--purple) 0px 20px 30px -10px;
+}
+
+.skills__specialText {
+  color: var(--purple);
+}
+
+.techstackMarginBox {
+  width: fit-content;
+  height: 60%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(7, 15%);
+  grid-gap: 10px;
+  margin: auto;
+  /* border: 2px solid white; */
+}
+
+.techstackMargin {
+  margin-right: 30px;
+
+}
+
+
+@media all and (min-width: 640px) and (max-width: 1024px) {
+
+  .skills {
+    padding-top: 10vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills__heading {
+    font-size: 80px;
+    margin-bottom: 45px;
+  }
+
+  .skills__text {
+    text-align: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 10rem;
+    /* border: 2px solid yellow; */
+  }
+
+  .skills__body {
+    padding-right: 0;
+    max-width: 60vw;
+    padding-bottom: 15px;
+  }
+
+  .skills__headshot {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15vh;
+    margin-top: 15px;
+  }
+
+  .techstackMarginBox {
+    width: fit-content;
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: repeat(5, 17%);
+    grid-gap: 25px;
+    /* align-items: center; */
+    justify-content: center;
+    padding-bottom: 25vh;
+  }
+  .techstackMargin {
+    margin-right: 30px;
+    /* border: 2px solid yellow; */
+    width: 70px;
+    height: 70px;
+  }
+  
+}
+
+@media only screen and (min-width: 324px) and (max-width: 640px) {
+  .skills {
+    padding-top: 10vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills__heading {
+    font-size: 50px;
+    margin-top: 00px;
+  }
+
+  .skills__text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: rem;
+  }
+
+  .skills__body {
+    padding-right: 0;
+    max-width: 60vw;
+    padding-bottom: 15px;
+  }
+
+  .skills__headshot {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15vh;
+    margin-top: 15px;
+  }
+
+  .techstackMarginBox {
+    width: fit-content;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    grid-gap: 25px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25vh;
+  }
+  .techstackMargin {
+    margin-right: 30px;
+    width: 70px;
+    height: 70px;
+  }
+}
